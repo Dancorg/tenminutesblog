@@ -1,5 +1,9 @@
-venv/
+venv
 __pycache__/
 *.log
 *.pyc
 migrations/
+staticfiles
+.env
+db.sqlite3
+getting-started/*
