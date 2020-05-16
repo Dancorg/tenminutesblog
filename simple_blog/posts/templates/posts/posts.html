@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ten Minutes Blog</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css" rel="stylesheet" integrity="sha384-yrfSO0DBjS56u5M+SjWTyAHujrkiYVtRYh2dtB3yLQtUz3bodOeialO59u5lUCFF" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'posts.css' %}">
+</head>
+
+<main class="col-lg-9 col-md-12 col-sm-12 col-12">
+    {% for post in object_list %}
+    <header>
+        <h3 class="text-center">{{ post.title | safe }}</h3>
+        <h6 class="float-right">{{ post.published_date | safe }}</h6><br><br>
+    </header>
+    <div class="text-justify">{{ post.body | safe}}</div>
+    {% endfor %}
+</main>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+nav {
+    color: #54d750;
+    background-color: black;
+}
+
+body {
+    font-family: 'IBM Plex Sans';
+}
+
+main {
+    background-color: white;
+}
+
+pre {
+    font-family: 'IBM Plex Mono', monospace;
+    border: 1px solid #80808038;
+}
+
+h1, h3, h4 {
+    font-family: 'IBM Plex Serif', sans-serif;
+}
