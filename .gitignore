@@ -6,3 +6,4 @@ migrations/
 staticfiles
 .env
 getting-started/*
+/datadump.json

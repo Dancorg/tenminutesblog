@@ -78,8 +78,14 @@ WSGI_APPLICATION = 'simple_blog.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        #'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': 'tenminutes',
+        'USER': 'postgres',
+        'PASSWORD': 'drkhan1986',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
