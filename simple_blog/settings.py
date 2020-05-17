@@ -126,4 +126,4 @@ STATIC_URL = '/static/'
 
 # to make summernote don't trigger clickjacking protection
 X_FRAME_OPTIONS = 'SAMEORIGIN'
-#django_heroku.settings(locals())
+django_heroku.settings(locals())
