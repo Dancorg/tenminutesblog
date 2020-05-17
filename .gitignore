@@ -5,5 +5,4 @@ __pycache__/
 migrations/
 staticfiles
 .env
-db.sqlite3
 getting-started/*
